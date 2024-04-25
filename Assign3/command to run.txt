@@ -1,0 +1,9 @@
+1st terminal:
+sudo apt update
+sudo apt install openmpi-bin
+sudo apt install libopenmpi-dev
+mpirun --version
+
+2nd terminal:
+mpicc MPI.c
+mpirun -np 4 ./a.out
